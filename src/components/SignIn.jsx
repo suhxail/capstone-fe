@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from 'react'
 import auth from "../services/auth";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate, } from "react-router-dom";
 
 
 function SignIn() {
@@ -15,7 +15,7 @@ function SignIn() {
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
-  const userProfile = useSelector(state => state.user);
+  // const userProfile = useSelector(state => state.user);
 
   const handleSignIn = (event) => {
     event.preventDefault();
