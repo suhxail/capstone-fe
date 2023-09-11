@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  height: 110vh;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-jewelry-event-promotion-main-map-image_123082.jpg");
+}
+
+/* signin and signup */
+
+.auth-form-container,
+.signin-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+.signin-label,
+.signup-label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+.signin-input,
+.signup-input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.signin-btn,
+.signup-btn {
+  border: none;
+  background-color: maroon;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: gold;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
+
+/* end of singin and signup */
+
+/* product list */
+
+.product-listing-container {
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 50px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-content {
+  background:#5C5346;
+  cursor: pointer;  
+  color: gold;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.product-btn {
+  background-color: maroon;
+  cursor: pointer;
+  color: gold;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  margin-bottom: 10px;
+  cursor: pointer; 
+}
+
+.product-card {
+
+  position: relative;
+  border-radius: 5px;
+  padding: 5px 2px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img {
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+/* end of product list */
+
+/* gold rate calculator */
+input[type=number],
+
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.calc-form {
+  border-radius: 5px;
+  padding: 20px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+
+}
+
+.calc-table {
+  margin-top: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  background-color: dimgray;
+}
+
+td,
+th {
+  border: 1px solid #4b4a4a;
+  text-align: left;
+  padding: 8px;
+}
+
+.calc-button {
+  background-color:maroon;
+  border-radius: 10px;
+  border: none;
+  color:gold;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+Title {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.calc-label {
+  margin-right: 1rem;
+}
+
+.calc-headerName {
+  margin: 1em 0;
+  display: flex;
+  color: maroon;
+  align-items: center;
+  justify-content: center;
+}
+
+.invalidMessage {
+  margin: 5px 0;
+  color: #900C3F;
+  font-size: medium;
+}
+.topBtn {
+  margin-top: 10px;
+}
+
+.calc-topBtn{
+  margin: 5px;
+  
+}
+
+.para {
+  background-color: dimgray;
+  width: fit-content;
+  margin: 20px 10px;
+  padding: 10px;  
+  display: inline-block;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+
+/*end of gold rate calculator */
